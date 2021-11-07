@@ -16,5 +16,5 @@ for stack_version in "${STACK_VERSIONS[@]}"; do
 
   mkdir -p build
 
-  docker run --rm -t -v $PWD/build:/build $image_name sh -c 'cp -f /usr/local/vips/build/*.tar.gz /build'
+  docker run --rm -t -v $PWD/build:/build $image_name sh -c 'cp -f /app/vendor/vips/build/*.tar.gz /build'
 done

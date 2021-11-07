@@ -39,7 +39,7 @@ RUN apt-get update && apt-get install -y \
   libwebp-dev
 
 # build our stack to this prefix
-ARG VIPS_PREFIX=/usr/local/vips
+ARG VIPS_PREFIX=/app/vendor/vips
 
 # ld and pkg-config need to pick up packages from this area
 ENV LD_LIBRARY_PATH=$VIPS_PREFIX/lib
